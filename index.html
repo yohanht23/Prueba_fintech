@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS Bin</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<style>
+
+	@media(min-width: 768px){
+		.sayHi{
+			display: none;
+		}
+	}
+
+	@media(max-width: 640px){
+		.mycard{
+			width: 100% !important;
+		}
+	}
+
+	body{
+		background: #eee;
+	}
+
+
+	.mycard{
+		width: 480px;
+		margin: 0 auto;
+	}
+	.mycard .card-body{
+		background: #fff !important;
+	}
+
+	.title{
+		font-size: 48px;
+	}
+</style>
+</head>
+
+<body>
+
+	<div class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="container">
+			<a href="#" class="navbar-brand">Prueba</a>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="card mycard bg-dark">
+		<div class="card-header text-white">Contenido</div>
+		<div class="card-body">
+			<div class="container">
+				<h1 class="display-4 pb-3 title">Rafael Hilario</h1>
+				<h2 class="h4">yohanht23@gmail.com</h2>
+			</div>
+
+			<br>
+
+			<div class="container">
+				<div class="">
+					<button class="btn btn-outline-primary background">Background</button>
+					<button class="btn btn-outline-danger number">1</button>
+					<button class="btn btn-outline-dark titleText">Title</button>
+					<button class="btn btn-outline-info form" data-toggle="modal" data-target="#form">Form</button>
+					<button class="btn btn-outline-primary sayHi">Hello!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="form">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form action="#">
+					<div class="modal-header">
+						<h5 class="modal-title">Introducción</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="p-3">
+							<div class="form-group">
+								<label>Nombre</label>
+								<input type="text" class="form-control name" required>
+							</div>
+							<br>
+							<div class="form-group">
+								<label>Edad</label>
+								<input type="number" class="form-control age" required>
+							</div>
+							<br>
+							<div class="form-group">
+								<label>Color</label>
+								<select name="" id="" class="form-control color">
+									<option value="0" hidden>Selecciona un color</option>
+									<option value="Rojo">Rojo</option>
+									<option value="Azul">Azul</option>
+									<option value="Amarillo">Amarillo</option>
+									<option value="Verde">Verde</option>
+									<option value="Blanco">Blanco</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary clear" data-dismiss="modal">Cerrar</button>
+						<button type="submit" class="btn btn-primary formButton">Continuar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
